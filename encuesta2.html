@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Encuesta</title>
+</head>
+<body>
+   <div class="container"> 
+    <header class="header">
+        <h1 class="title">Encuesta para mi novia</h1>
+        <p class="header_descripcion title">Por favor responda las siguientes preguntas a la brevedad</p>
+    </header>
+
+    <form class="formulario">
+        <div class="info">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="coloque su nombre" required class="info_input">    
+        </div>
+
+        <div class="info">
+            <label for="email">Email</label>
+            <input type "email" id="email" placeholder="coloque su email" required class="info_input">    
+        </div>
+       
+        <div class="info">
+            <label for="edad">Edad (opcional)</label>
+            <input type="number" id="edad" placeholder="coloque su edad" min="18" class="info_input">    
+        </div>
+        
+        <div class="info">
+            <p>¿Qué pelicula quieres ver conmigo?</p>
+            <select class="info_input" name="" id="">
+                <option selected disabled>seleccione su pelicula</option>
+                <option value="intensamente">intensamente 2</option>
+                <option value="villano">mi villano favorito 4</option>
+                <option value="guason">guasón 2</option>
+                <option value="deadpool">wolwerine y deadpool</option>
+                <option value="leyenda">la leyenda del dragón</option>
+            </select>
+        </div>
+
+        <div class="info">
+            <p>¿Alguno de estos actores es tu favorito?</p>
+           <label><input type="radio" name="actor" class="info_radio">Will Smith</label> 
+           <label><input type="radio" name="actor" class="info_radio">Denzel washighton</label> 
+           <label><input type="radio" name="actor" class="info_radio">Ryan Reynolds</label> 
+           <label><input type="radio" name="actor" class="info_radio">Zac Efron</label> 
+           <label><input type="radio" name="actor" class="info_radio">Morgan Freeman</label> 
+        </div>
+       
+        <div class="info">
+            <p>¿Cuáles de las siguientes opciones te gustaría comprar?(Seleccione los que desee)</p>
+           <label><input type="checkbox" value="palomitas" class="info_checkbox">Palomitas</label> 
+           <label><input type="checkbox" value="pizza" class="info_checkbox">Pizza</label> 
+           <label><input type="checkbox" value="gomitas" class="info_checkbox">Gomitas</label> 
+           <label><input type="checkbox" value="tostitos" class="info_checkbox">Tostitos</label> 
+           <label><input type="checkbox" value="doritos" class="info_checkbox">Doritos</label> 
+           <label><input type="checkbox" value="helado" class="info_checkbox">Helado</label> 
+        </div> 
+        
+        <div class="info">
+            <p>¿Algún comentario o sugerencia?</p>
+            <textarea class="info_textarea" placeholder="Escribe aquí tus sugerencias"></textarea>
+        </div>
+       
+        <div class="info">
+            <input type="button" value="Enviar" class="info_submit">
+        </div>
+       
+
+       
+    </form>
+   </div>
+</body>
+</html>
